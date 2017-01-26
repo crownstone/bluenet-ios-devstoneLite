@@ -1,0 +1,569 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FA87100F1E3A602400840D6A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8710071E3A602400840D6A /* AppDelegate.swift */; };
+		FA8710101E3A602400840D6A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA8710081E3A602400840D6A /* Assets.xcassets */; };
+		FA8710111E3A602400840D6A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA8710091E3A602400840D6A /* LaunchScreen.storyboard */; };
+		FA8710121E3A602400840D6A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA87100B1E3A602400840D6A /* Main.storyboard */; };
+		FA8710131E3A602400840D6A /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FA87100D1E3A602400840D6A /* Info.plist */; };
+		FA8710141E3A602400840D6A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA87100E1E3A602400840D6A /* ViewController.swift */; };
+		FA87101B1E3A634600840D6A /* BluenetLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA8710151E3A634600840D6A /* BluenetLib.framework */; };
+		FA87101C1E3A634600840D6A /* BluenetShared.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA8710161E3A634600840D6A /* BluenetShared.framework */; };
+		FA87101D1E3A634600840D6A /* CryptoSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA8710171E3A634600840D6A /* CryptoSwift.framework */; };
+		FA87101E1E3A634600840D6A /* iOSDFULibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA8710181E3A634600840D6A /* iOSDFULibrary.framework */; };
+		FA87101F1E3A634600840D6A /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA8710191E3A634600840D6A /* SwiftyJSON.framework */; };
+		FA8710201E3A634600840D6A /* Zip.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA87101A1E3A634600840D6A /* Zip.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FA70F1111DE734BA001049F9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA70F0F41DE734B9001049F9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FA70F0FB1DE734B9001049F9;
+			remoteInfo = DevStoneLite;
+		};
+		FA70F11C1DE734BA001049F9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA70F0F41DE734B9001049F9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FA70F0FB1DE734B9001049F9;
+			remoteInfo = DevStoneLite;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FA70F0FC1DE734B9001049F9 /* BluenetExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BluenetExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA70F1101DE734BA001049F9 /* BluenetExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BluenetExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA70F11B1DE734BA001049F9 /* BluenetExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BluenetExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA8710071E3A602400840D6A /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FA8710081E3A602400840D6A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FA87100A1E3A602400840D6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FA87100C1E3A602400840D6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FA87100D1E3A602400840D6A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA87100E1E3A602400840D6A /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FA8710151E3A634600840D6A /* BluenetLib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BluenetLib.framework; path = Carthage/Build/iOS/BluenetLib.framework; sourceTree = "<group>"; };
+		FA8710161E3A634600840D6A /* BluenetShared.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BluenetShared.framework; path = Carthage/Build/iOS/BluenetShared.framework; sourceTree = "<group>"; };
+		FA8710171E3A634600840D6A /* CryptoSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CryptoSwift.framework; path = Carthage/Build/iOS/CryptoSwift.framework; sourceTree = "<group>"; };
+		FA8710181E3A634600840D6A /* iOSDFULibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iOSDFULibrary.framework; path = Carthage/Build/iOS/iOSDFULibrary.framework; sourceTree = "<group>"; };
+		FA8710191E3A634600840D6A /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
+		FA87101A1E3A634600840D6A /* Zip.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Zip.framework; path = Carthage/Build/iOS/Zip.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FA70F0F91DE734B9001049F9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA87101D1E3A634600840D6A /* CryptoSwift.framework in Frameworks */,
+				FA87101B1E3A634600840D6A /* BluenetLib.framework in Frameworks */,
+				FA87101E1E3A634600840D6A /* iOSDFULibrary.framework in Frameworks */,
+				FA87101C1E3A634600840D6A /* BluenetShared.framework in Frameworks */,
+				FA8710201E3A634600840D6A /* Zip.framework in Frameworks */,
+				FA87101F1E3A634600840D6A /* SwiftyJSON.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA70F10D1DE734BA001049F9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA70F1181DE734BA001049F9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FA70F0F31DE734B7001049F9 = {
+			isa = PBXGroup;
+			children = (
+				FA8710151E3A634600840D6A /* BluenetLib.framework */,
+				FA8710161E3A634600840D6A /* BluenetShared.framework */,
+				FA8710171E3A634600840D6A /* CryptoSwift.framework */,
+				FA8710181E3A634600840D6A /* iOSDFULibrary.framework */,
+				FA8710191E3A634600840D6A /* SwiftyJSON.framework */,
+				FA87101A1E3A634600840D6A /* Zip.framework */,
+				FA70F0FD1DE734B9001049F9 /* Products */,
+				FA8710061E3A602400840D6A /* BluenetExample */,
+			);
+			sourceTree = "<group>";
+		};
+		FA70F0FD1DE734B9001049F9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FA70F0FC1DE734B9001049F9 /* BluenetExample.app */,
+				FA70F1101DE734BA001049F9 /* BluenetExampleTests.xctest */,
+				FA70F11B1DE734BA001049F9 /* BluenetExampleUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FA8710061E3A602400840D6A /* BluenetExample */ = {
+			isa = PBXGroup;
+			children = (
+				FA8710071E3A602400840D6A /* AppDelegate.swift */,
+				FA8710081E3A602400840D6A /* Assets.xcassets */,
+				FA8710091E3A602400840D6A /* LaunchScreen.storyboard */,
+				FA87100B1E3A602400840D6A /* Main.storyboard */,
+				FA87100D1E3A602400840D6A /* Info.plist */,
+				FA87100E1E3A602400840D6A /* ViewController.swift */,
+			);
+			path = BluenetExample;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FA70F0FB1DE734B9001049F9 /* BluenetExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA70F1241DE734BA001049F9 /* Build configuration list for PBXNativeTarget "BluenetExample" */;
+			buildPhases = (
+				FA70F0F81DE734B9001049F9 /* Sources */,
+				FA70F0F91DE734B9001049F9 /* Frameworks */,
+				FA70F0FA1DE734B9001049F9 /* Resources */,
+				FA70F1351DE73845001049F9 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BluenetExample;
+			productName = DevStoneLite;
+			productReference = FA70F0FC1DE734B9001049F9 /* BluenetExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FA70F10F1DE734BA001049F9 /* BluenetExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA70F1271DE734BA001049F9 /* Build configuration list for PBXNativeTarget "BluenetExampleTests" */;
+			buildPhases = (
+				FA70F10C1DE734BA001049F9 /* Sources */,
+				FA70F10D1DE734BA001049F9 /* Frameworks */,
+				FA70F10E1DE734BA001049F9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FA70F1121DE734BA001049F9 /* PBXTargetDependency */,
+			);
+			name = BluenetExampleTests;
+			productName = DevStoneLiteTests;
+			productReference = FA70F1101DE734BA001049F9 /* BluenetExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FA70F11A1DE734BA001049F9 /* BluenetExampleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA70F12A1DE734BA001049F9 /* Build configuration list for PBXNativeTarget "BluenetExampleUITests" */;
+			buildPhases = (
+				FA70F1171DE734BA001049F9 /* Sources */,
+				FA70F1181DE734BA001049F9 /* Frameworks */,
+				FA70F1191DE734BA001049F9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FA70F11D1DE734BA001049F9 /* PBXTargetDependency */,
+			);
+			name = BluenetExampleUITests;
+			productName = DevStoneLiteUITests;
+			productReference = FA70F11B1DE734BA001049F9 /* BluenetExampleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FA70F0F41DE734B9001049F9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = "Alex de Mulder";
+				TargetAttributes = {
+					FA70F0FB1DE734B9001049F9 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 6LYJ9PNC3V;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+					FA70F10F1DE734BA001049F9 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = FA70F0FB1DE734B9001049F9;
+					};
+					FA70F11A1DE734BA001049F9 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = FA70F0FB1DE734B9001049F9;
+					};
+				};
+			};
+			buildConfigurationList = FA70F0F71DE734B9001049F9 /* Build configuration list for PBXProject "BluenetExample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FA70F0F31DE734B7001049F9;
+			productRefGroup = FA70F0FD1DE734B9001049F9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FA70F0FB1DE734B9001049F9 /* BluenetExample */,
+				FA70F10F1DE734BA001049F9 /* BluenetExampleTests */,
+				FA70F11A1DE734BA001049F9 /* BluenetExampleUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FA70F0FA1DE734B9001049F9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA8710131E3A602400840D6A /* Info.plist in Resources */,
+				FA8710121E3A602400840D6A /* Main.storyboard in Resources */,
+				FA8710101E3A602400840D6A /* Assets.xcassets in Resources */,
+				FA8710111E3A602400840D6A /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA70F10E1DE734BA001049F9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA70F1191DE734BA001049F9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		FA70F1351DE73845001049F9 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/BluenetLib.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/PromiseKit.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/CryptoSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SwiftyJSON.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/BluenetShared.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/iOSDFULibrary.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Zip.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FA70F0F81DE734B9001049F9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA8710141E3A602400840D6A /* ViewController.swift in Sources */,
+				FA87100F1E3A602400840D6A /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA70F10C1DE734BA001049F9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA70F1171DE734BA001049F9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FA70F1121DE734BA001049F9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FA70F0FB1DE734B9001049F9 /* BluenetExample */;
+			targetProxy = FA70F1111DE734BA001049F9 /* PBXContainerItemProxy */;
+		};
+		FA70F11D1DE734BA001049F9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FA70F0FB1DE734B9001049F9 /* BluenetExample */;
+			targetProxy = FA70F11C1DE734BA001049F9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FA8710091E3A602400840D6A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA87100A1E3A602400840D6A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		FA87100B1E3A602400840D6A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA87100C1E3A602400840D6A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FA70F1221DE734BA001049F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FA70F1231DE734BA001049F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FA70F1251DE734BA001049F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 6LYJ9PNC3V;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/BluenetExample/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.crownstone.example;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		FA70F1261DE734BA001049F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 6LYJ9PNC3V;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/BluenetExample/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.crownstone.example;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		FA70F1281DE734BA001049F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = DevStoneLiteTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.crownstone.DevStoneLiteTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BluenetExample.app/BluenetExample";
+			};
+			name = Debug;
+		};
+		FA70F1291DE734BA001049F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = DevStoneLiteTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.crownstone.DevStoneLiteTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BluenetExample.app/BluenetExample";
+			};
+			name = Release;
+		};
+		FA70F12B1DE734BA001049F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = DevStoneLiteUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.crownstone.DevStoneLiteUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = DevStoneLite;
+			};
+			name = Debug;
+		};
+		FA70F12C1DE734BA001049F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = DevStoneLiteUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.crownstone.DevStoneLiteUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = DevStoneLite;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FA70F0F71DE734B9001049F9 /* Build configuration list for PBXProject "BluenetExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA70F1221DE734BA001049F9 /* Debug */,
+				FA70F1231DE734BA001049F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA70F1241DE734BA001049F9 /* Build configuration list for PBXNativeTarget "BluenetExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA70F1251DE734BA001049F9 /* Debug */,
+				FA70F1261DE734BA001049F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA70F1271DE734BA001049F9 /* Build configuration list for PBXNativeTarget "BluenetExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA70F1281DE734BA001049F9 /* Debug */,
+				FA70F1291DE734BA001049F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA70F12A1DE734BA001049F9 /* Build configuration list for PBXNativeTarget "BluenetExampleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA70F12B1DE734BA001049F9 /* Debug */,
+				FA70F12C1DE734BA001049F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FA70F0F41DE734B9001049F9 /* Project object */;
+}
