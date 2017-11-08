@@ -23,6 +23,7 @@ class ViewController: UIViewController {
     var nearestHandle : String = ""
     var nearestName   : String = ""
     var nearestRssi   : Int = -1000
+    var nearestVerified : Bool = false
     
     var bluenet : Bluenet!
     var bluenetLocalization : BluenetLocalization!
@@ -173,16 +174,17 @@ class ViewController: UIViewController {
             self.advertisementUpdate = Date().timeIntervalSince1970
             let dict = castData.getDictionary()
             if (self.targetHandle == dict["handle"] as? String) {
-                self.selectedLabel.text = "\(dict["name"]!) : \(dict["rssi"]!)"
+                self.selectedLabel.text = "\(dict["name"]!), rssi:\(dict["rssi"]!)"
                 self._updateViews(type: type, verified: dict["verified"] as! Bool)
             }
             
             if (self.nearestHandle != dict["handle"] as? String) {
                 if (self.nearestRssi < dict["rssi"] as! Int) {
-                    self.nearestType = type
-                    self.nearestHandle = dict["handle"] as! String
-                    self.nearestName = dict["name"] as! String
-                    self.nearestRssi = dict["rssi"] as! Int
+                    self.nearestType       = type
+                    self.nearestHandle     = dict["handle"] as! String
+                    self.nearestName       = dict["name"] as! String
+                    self.nearestRssi       = dict["rssi"] as! Int
+                    self.nearestVerified   = dict["verified"] as! Bool
                     self.nearestLabel.text = "\(dict["name"]!) : \(dict["rssi"]!)"
                 }
             }
@@ -198,6 +200,7 @@ class ViewController: UIViewController {
     @IBAction func selectCrownstone(_ sender: Any) {
         if (self.nearestHandle != "") {
             self.targetHandle = self.nearestHandle
+            self._updateViews(type: self.nearestType, verified: self.nearestVerified)
         }
     }
     
